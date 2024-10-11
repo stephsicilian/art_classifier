@@ -2,6 +2,8 @@
 
 This project is a binary image classifier built with PyTorch, designed to distinguish between two types of art: **sculptures** and **paintings**. The model uses a Convolutional Neural Network (CNN) architecture to classify images and is trained on a dataset of artwork images. <br>
 
+Highest Achieved Accuracy: 91 % <br>
+
 ## Table of Contents
 - [Project Overview](#project-overview)  
 - [Dataset](#dataset)  
