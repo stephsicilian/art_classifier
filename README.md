@@ -78,11 +78,7 @@ pip install torch numpy pillow
    ```
 
 2. Prepare your dataset and place it in the `datasets` directory. Ensure the directory structure follows the pattern described in the [Dataset](#dataset) section.
-
-3. Make sure the necessary dependencies are installed:  
-   ```bash
-   pip install -r requirements.txt
-   ```
+<br>
 
 ## Training the Model
 
