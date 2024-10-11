@@ -8,4 +8,4 @@
 <br>
 * This model has a Convolutional Neural Network architecture.
 <br>
-### Highest accuracy achived: ###
+**Highest accuracy achived:**
