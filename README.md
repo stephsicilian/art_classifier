@@ -32,9 +32,14 @@ The dataset used for this project contains images of:
 - **Paintings**  
 
 The dataset is divided into training and test sets and follows the directory structure:  <br>
-datasets/ ├── train/ │ ├── sculpture/ │ └── painting/ └── test/ ├── sculpture/ └── painting/
+datasets/<br>
+  ├── train/<br>
+   │    ├── sculpture/<br>
+   │    └── painting/<br>
+  └── test/<br>
+       ├── sculpture/<br>
+       └── painting/<br>
 <br>
-
 
 Each subdirectory contains image files in `.jpg` or `.png` format. <br>  
 You can download the dataset from [Kaggle](https://www.kaggle.com/datasets/thedownhill/art-images-drawings-painting-sculpture-engraving).  
@@ -57,10 +62,12 @@ To run this project, you need the following dependencies:
 - Python 3.x  
 - PyTorch  
 - NumPy  
-- Pillow (PIL)  
+- Pillow (PIL)
+
 You can install the necessary dependencies by running:  
 ```bash
 pip install torch numpy pillow
+ ```
 
 ## Setup and Installation
 
@@ -68,4 +75,58 @@ pip install torch numpy pillow
    ```bash
    git clone https://github.com/your-username/art-classification.git  
    cd art-classification
+   ```
+
+2. Prepare your dataset and place it in the `datasets` directory. Ensure the directory structure follows the pattern described in the [Dataset](#dataset) section.
+
+3. Make sure the necessary dependencies are installed:  
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Training the Model
+
+To train the model, run the `train.py` script. This will train the CNN on the training dataset and save the model weights to `Art.pth`.  
+```bash
+python train.py
+```
+
+You can adjust the number of epochs and learning rate in the script if desired.
+
+## Testing the Model
+
+Once the model is trained, you can test its performance on the test dataset by running the `test.py` script:  
+```bash
+python test.py
+```
+
+This script will load the saved model (`Art.pth`), run it on the test dataset, and print out the accuracy of the model.
+
+## Results
+
+After training and testing, the model will print out metrics such as:  
+- Overall accuracy  
+- Correct and total counts for each label (sculptures, paintings)
+
+Example output:
+```
+Accuracy: 0.85  
+Label Count: [50, 50]  
+Label Correct: [43, 42]
+```
+
+## File Structure
+
+The repository contains the following files:
+```
+.
+├── ArtNeuralNetwork.py  # Defines the CNN model and preprocessing  
+├── train.py             # Script to train the model  
+├── test.py              # Script to test the model  
+├── Art.pth              # Trained model weights (ignored in .gitignore)  
+└── README.md            # Project documentation
+```
+
+## License
+
 
