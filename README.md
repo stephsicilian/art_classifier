@@ -17,7 +17,7 @@ Highest Achieved Accuracy: 89 % <br>
 <br>
 
 ## Project Overview
-The ArtNeuralNetwork project is a sophisticated deep learning-based system designed to classify artwork into two primary categories: sculptures or paintings. The project is organized around three key Python scripts:
+The ArtNeuralNetwork project is a deep learning-based system designed to classify artwork into two primary categories: sculptures or paintings. The project is organized around three key Python scripts:
 
 1. **ArtNeuralNetwork.py** - Defines the neural network architecture, image preprocessing procedures, and training functionalities.
 2. **train.py** - Manages the training of the model using a labeled dataset of art images.
